@@ -1,0 +1,45 @@
+﻿@page "/equipe"
+<h3>Lista de Equipes</h3>
+<br />
+
+<button class="btn btn-primary" @onclick="() => BuscaRegistro(string.Empty)">
+    <span class="oi oi-plus"> &nbsp;Novo</span>
+</button>
+
+
+@if (ListaEquipe == null)
+{
+    <p style="text-align:center"><em>Carregando...</em></p>
+}
+else
+{
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Equipe</th>
+                <th>Cadastro</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in ListaEquipe)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.Descricao</td>
+                    <td>@item.DtCadastro.ToString("dd/MM/yyyy")</td>
+                    <td>
+                        <button class="btn btn-secondary" @onclick="() => BuscaRegistro(item.Id)">
+                            <span class="oi oi-pencil"></span>
+                        </button>
+                        <button class="btn btn-danger" @onclick="() => ExcluirRegistro(item.Id)">
+                            <span class="oi oi-trash"></span>
+                        </button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+}

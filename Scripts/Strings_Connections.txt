@@ -1,0 +1,11 @@
+"ConexaoPadrao": "Driver={Advantage StreamlineSQL ODBC};DataDirectory=C:\\dev\\BlazorDapperOdbc\\Dbfs;CharSet=ANSI;Language=ANSI;Locking=Record;MaxTableCloseCache=25;MemoBlockSize=64;Compression=Internet;ServerTypes=1;DefaultType=Visual FoxPro;TrimTrailingSpaces=true;"
+
+"ConexaoPadrao": "Driver={Microsoft Access Driver (*.mdb, *.accdb)};Dbq=C:\\dev\\BlazorDapperOdbc\\Access\\BlazorODBC.accdb;Exclusive=0;Uid=Admin;Pwd=;"
+
+"ConexaoPadrao": "Driver={SQLite3 ODBC Driver};Database=C:\\dev\\BlazorDapperOdbc\\SqLite\\BlazorODBC.db;LongNames=0;Timeout=1000;NoTXN=0;SyncPragma=NORMAL;StepAPI=0;"
+
+"ConexaoPadrao": "Driver={SQL Server};Server=localhost;Database=BlazorOdbc;UID=sa;PWD=SUA_SENHA;"
+
+"ConexaoPadrao": "Driver={PostgreSQL ANSI};Server=localhost;Port=5432;Database=BlazorOdbc;Uid=postgres;Pwd=SUA_SENHA;"
+
+"ConexaoPadrao": "Driver={MySQL ODBC 8.0 ANSI Driver};Server=localhost;Database=BlazorODBC;User=root;Password=SUA_SENHA;Option=3;"
